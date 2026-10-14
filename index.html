@@ -1,0 +1,129 @@
+
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <header> <!-- Container tag-->
+    <h1>Sayali Dhage</h1>
+    <p>I am a Computer Engineering student interested in software development, problem-solving, and modern web technologies.
+    </p>
+    </header>
+
+    <nav>  <!-- Container tag-->
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interships">Work Exp./Internships</a></li>
+      <li><a href="#">Projects</a></li>
+      <!-- sections that you want to have in your portfolio-->
+
+      <!--Mandatory sections-->
+      <li><a href="#contact-me">Contact Me</a></li>
+      <li><a href="#admin-login" id="admin-btn">Admin Login</a></li>
+      
+    </ul>
+    </nav>
+    <button id="toggle-theme">Toggle Theme</button>
+    <section id="education" class="section-blocks"> <!--Container tag-->
+      
+    <h2>Education</h2>
+
+    <div class="section-item">
+    <h3>T.E. Computer Engineering</h3>
+    <p>Pune</p>
+    <p>2026</p>
+    </div>
+
+    <div class="section-item">
+    <h3>Diploma CS</h3>
+    <p>Pune</p>
+    <p>2022-2025</p>
+    </div>
+
+    <div class="section-item">
+    <h3>10th</h3>
+    <p>DPS</p>
+    <p>2021-2022</p>
+    </div>
+
+    </section>
+
+    <section id="interships" class="section-blocks"> <!--Container tag-->
+    <h2>Work Exp/ Internships</h2>
+
+    <div class="section-item">
+    <h3>Internship in Virtusky</h3>
+    <p>Java,Python</p>
+    <p>2024</p>
+    </div>
+
+    <div class="section-item">
+    <h3>Internship in yhill</h3>
+    <p>html,css,javascript</p>
+    <p>2026</p>
+    </div>
+
+    </section>
+
+    <!-- If you want to add more sections please add them and then continue with
+    Contact me and Admin login sections-->
+
+    <!--Contact Me section-->
+    <section id="contact-me" class="section-blocks">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form"> <!--form validation-->
+        <div>
+        <label>Name:</label>
+        <input type="text" id="input-name" required> 
+        </div>
+
+        <div>
+        <label>Email:</label>
+        <input type="email" id="input-email" required>
+        </div>
+
+        <div>
+        <label>Message:</label>
+        <textarea id="input-msg" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        
+      </form>
+      
+    </section>
+
+    <section id="admin-login" class="section-blocks">
+      <h2>Admin Login</h2>
+      <form id="admin-form">
+        <div>
+        <label>Username:</label>
+        <input type="text" id="input-username" required> 
+        </div>
+
+        <div>
+        <label>Password:</label>
+        <input type="password" id="input-password" required> 
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <section id="user-responses" class="section-blocks">
+      <h2>User Responses</h2>
+      
+      <div id="user-messages">
+        
+      </div>
+      
+    </section>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

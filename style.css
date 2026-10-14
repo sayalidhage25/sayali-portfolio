@@ -1,0 +1,122 @@
+/* Selectors 
+
+1. HTML tags - No Spl character needed
+2. Class names- DOT ( . ) spl character needed
+3. ID names - Hash ( # ) spl character needed.
+*/
+
+header {
+  text-align: center;
+  border: 10px double #15DDEB;
+  background: linear-gradient(120deg, #667eea 0%, #DB4495 50%);
+  animation: slide-in 3s infinite;
+}
+
+nav {
+  background-color: #679eea;
+  border-radius: 30px;
+  padding: 1 rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+nav ul li a{
+  margin: 10px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+nav ul li a:hover{
+  color: #fff;
+  border: solid 2px black;
+}
+
+.section-blocks{
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  
+}
+
+.section-blocks h2 {
+  color: #3498db;
+  font-size: 2rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #3498bd;
+}
+
+.section-item{
+  border-left: 4px solid #3498db;
+  border-right: 4px solid #3498db;
+  border-radius: 20px;
+  margin: 10px;
+  margin-right: 6rem;
+  padding: 0.4rem;
+}
+
+.section-item:hover{
+  border-left: 4px solid #9498db;
+  transform: translateX(40px);
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 8px;
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px)
+  }
+
+  50% {
+    transform: translateY(-20px)
+  }
+}
+
+#admin-login {
+  display: none;
+}
+
+#user-responses{
+  display: none;
+}
+
+.dark-theme{
+  background-color: #34495c;
+}
+
+.dark-theme header{
+  background-color: #34495e;
+  color: #fff;
+  border-top: 10px solid #34495e;
+  border-left: 10px solid #34495e;
+  border-right: 10px solid #34495e;
+}
+
+.dark-theme nav{
+  background-color: #34495c;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0; /*transparent*/
+    transform: translateX(-50px);
+  }
+  
+  to {
+    opacity: 1; /*transparent*/
+    transform: translateX(0px);
+  }
+}
